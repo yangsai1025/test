@@ -1,0 +1,16 @@
+1.配置用户名和邮箱
+Administrator@PC-20180311CJUI MINGW64 ~/Desktop
+$ git config --global user.name "yangsai"
+
+Administrator@PC-20180311CJUI MINGW64 ~/Desktop
+$ git config --global user.email "2471776255@qq.com"
+
+2.使用git生成钥匙
+$ ssh-keygen -t rsa -C "2471776255@qq.com"
+这是在c盘就有.ssh文件了，公钥匙和密钥匙
+3.把.ssh文件中的共钥匙pub放到github的ssh配置key上
+4.在所有程序中，找到小乌龟的文件，点击puttygen,将git生成的ssh转换成小乌龟认识的格式
+点击load,选择.ssh中的密钥匙，
+5.点击save pub保存公钥匙，点击private保存密钥匙，玩乐
+6.在所有程序中，找到小乌龟的文件，点击pageant,在右下角，选择密钥匙,wanle
+7.在克隆代码的时候，点击git clone后勾选load putty key，把.ssh中的密钥匙选择上
