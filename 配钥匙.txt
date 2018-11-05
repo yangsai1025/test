@@ -11,7 +11,7 @@ $ ssh-keygen -t rsa -C "2471776255@qq.com"
 3.把.ssh文件中的共钥匙pub放到github的ssh配置key上
 4.在所有程序中，找到小乌龟的文件，点击puttygen,将git生成的ssh转换成小乌龟认识的格式
 点击load,选择.ssh中的密钥匙，
-5.就在下面的按钮上，点击save pub保存公钥匙，点击private保存密钥匙，
+5.就在下面的按钮上，点击save pub保存配置后的公钥匙，点击private保存配置后的密钥匙，
 
 6.在所有程序中，找到小乌龟的文件，点击pageant,在右下角，选择配置后的密钥匙
 7.在克隆代码的时候，点击git clone后勾选load putty key，把.ssh中的配置后的密钥匙选择上
